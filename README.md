@@ -1,0 +1,2 @@
+# jsexercises
+JavaSrcirpt exercises
