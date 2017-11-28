@@ -31,6 +31,7 @@ console.log('Wynik działania funkcji: ' + dzialanie(a,c));
 var date = new Date();
 var firstDay = date.getDay();
 
+
 function day(){
     if (firstDay === 1) {
         console.log('Disiaj jest pierwszy dzień tygodnia');
@@ -40,5 +41,4 @@ function day(){
     }
 
 }
-
 console.log(day());
