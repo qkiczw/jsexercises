@@ -66,8 +66,21 @@ console.log(a + (b*c)); // Wynik 40
 console.log((a * c) + (a * a)); //Wynik 60
 console.log(4 * (a * b) + 100 + (c * b)); //Wynik  235
 
+
+// Operacje na stringach
+
 var simpleString = 'Hello World';
 
 console.log(simpleString);
 console.log('Długość tego stringu to: ' + simpleString.length);
-console.log(simpleString.slice( ));
+console.log('Cięcie od 0 do 5 znaku daje ' + simpleString.slice(0, 5));
+console.log('Cięcie od 6 do 11 znaku daje ' + simpleString.slice(6, 11));
+console.log('Zamiast Hello jest ' + simpleString.replace( 'Hello', 'Hell'));
+console.log('Zamiast World będzie ' + simpleString.replace('World', 'Łukasz'));
+console.log('I zmiana na duże ' + simpleString.toUpperCase());
+console.log(simpleString.split(' ')); // zmiana stringa na tablice podzielonych wyrazów
+
+var simpleStringArray = simpleString.split(' ');
+
+console.log(simpleStringArray[1]);
+console.log(simpleStringArray[0].charAt(0).toUpperCase() + '.' + simpleStringArray[1].charAt(0).toUpperCase());
