@@ -1,11 +1,11 @@
-var a = 5,
-    b = 4,
-    c = 3;
+var x = 5,
+    y = 4,
+    z = 3;
 
-var wynik = a + b + c;
-var reszta = wynik%a;
-var dzielenie = wynik / c;
-var mnozenie = a * b *c;
+var wynik = x + y + z;
+var reszta = wynik%x;
+var dzielenie = wynik / z;
+var mnozenie = x * y *z;
 
 console.log('Zmiene a:5, b:4 c:3');
 console.log('Wynik dodawania to: ' + wynik);
@@ -109,3 +109,15 @@ number *=2;
 console.log('number: ' + number);
 number /=3;
 console.log('numer: ' + number);
+
+
+// If na przywitanie użytownika
+
+var userName = prompt('Proszę podaj swoje imie');
+
+if(userName == 'Łukasz'){
+    console.log('Cześć ' + userName);
+}
+else{
+    console.log('Witaj nieznajomy!');
+}
