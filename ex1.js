@@ -13,7 +13,7 @@ console.log('Reszta z dzielenia to:' + reszta);
 console.log('Wynik dzielenia zmiennej wynik przez zmienna c to: ' + dzielenie);
 console.log('Wynik mnożenia trzech zmiennych to: ' + mnozenie);
 
-if (a > b){
+if (x > y){
     console.log('A jest większe od B');
 }
 else {
@@ -21,11 +21,11 @@ else {
 }
 
 
-function dzialanie(a,c) {
-    return a+c;
+function dzialanie(x,z) {
+    return x+z;
 
 }
-console.log('Wynik działania funkcji: ' + dzialanie(a,c));
+console.log('Wynik działania funkcji: ' + dzialanie(x,z));
 
 
 var date = new Date();
@@ -115,7 +115,7 @@ console.log('numer: ' + number);
 
 var userName = prompt('Proszę podaj swoje imie');
 
-if(userName == 'Łukasz'){
+if(userName === 'Łukasz'){
     console.log('Cześć ' + userName);
 }
 else{
