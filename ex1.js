@@ -84,3 +84,28 @@ var simpleStringArray = simpleString.split(' ');
 
 console.log(simpleStringArray[1]);
 console.log(simpleStringArray[0].charAt(0).toUpperCase() + '.' + simpleStringArray[1].charAt(0).toUpperCase());
+
+var anotherSipleString = '    To jest string z whitespaceami    ';
+
+console.log(anotherSipleString);
+console.log('A to jest ten strng bez whitespaceów: ' + anotherSipleString.trim());
+
+// Zabawa z Math
+var randomNumber = Math.random();
+
+console.log('Losowa liczba od 0 do 1: ' + randomNumber);
+console.log('Losowa liczba od 0 do 10: ' + randomNumber * 10);
+
+randomNumber = Math.random() * 10;
+console.log('Losowa licza od 0 do 10 zaokrąglona:' + Math.ceil(randomNumber));
+
+var number = 10;
+console.log('number: ' + number);
+number += 10;
+console.log('number: ' + number);
+number-=5;
+console.log('number: ' + number);
+number *=2;
+console.log('number: ' + number);
+number /=3;
+console.log('numer: ' + number);
