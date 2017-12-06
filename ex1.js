@@ -121,3 +121,12 @@ if(userName == 'Łukasz'){
 else{
     console.log('Witaj nieznajomy!');
 }
+
+var num = 9;
+
+if (num%2 === 0){
+    console.log('Z reszty z dzielenia liczby ' + num + 'zostaje zero');
+}
+else{
+    console.log('Z reszty z dzielenia liczby ' + num + ' zostaje ' + num%2);
+}
