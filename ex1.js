@@ -42,3 +42,32 @@ function day(){
 
 }
 console.log(day());
+
+// Wyniki różnych działań
+
+var a = 5,
+    b = 5,
+    c = 7,
+    addition= a + b +c,
+    substraction = c - b - a,
+    multiplication = a * b,
+    divide =  c/a,
+    modulo = c%b;
+
+console.log('Wynik dodawnia to: ' + addition);
+console.log('Wynik odejmowania to: ' + substraction);
+console.log('Wynik mnożenia to: ' + multiplication);
+console.log('Wynik dzielenia to: ' + divide);
+console.log('Wynik reszty z dzielenia to: ' + modulo);
+
+// Działania z nawiasami
+
+console.log(a + (b*c)); // Wynik 40
+console.log((a * c) + (a * a)); //Wynik 60
+console.log(4 * (a * b) + 100 + (c * b)); //Wynik  235
+
+var simpleString = 'Hello World';
+
+console.log(simpleString);
+console.log('Długość tego stringu to: ' + simpleString.length);
+console.log(simpleString.slice( ));
