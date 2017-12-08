@@ -36,3 +36,9 @@ var ford = {
 for(attribute in ford){
     console.log(ford[attribute]);
 }
+
+let simpleString = 'Łukasz Sztormowski';
+
+for(let data of simpleString){
+    console.log(data);
+}
