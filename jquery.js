@@ -6,8 +6,10 @@ $(function () {
 
    function showScrollBtn() {
        if ($(this).scrollTop() > $showScrollBntMinValue) {
-           console.log($(this).scrollTop());
+           console.log('show button');
            $scrollBtn.show();
+       } else {
+           $scrollBtn.hide();
        }
 
    }
