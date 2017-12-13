@@ -13,7 +13,11 @@
   font-weight: bold; }
   #font-size-changer .font-size-change-slider {
     font-size: 15px;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer;
+    background-color: forestgreen;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
   #font-size-changer .buttons {
     display: flex;
     justify-content: space-around; }
