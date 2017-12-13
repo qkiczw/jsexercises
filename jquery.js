@@ -22,4 +22,7 @@ $(function () {
     $scrollBtn.on('click', scrollToTop);
 
 
+    // font size changer
+
+
 });
