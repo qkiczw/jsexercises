@@ -1,3 +1,6 @@
+body {
+  font-size: 1em; }
+
 #font-size-changer {
   position: fixed;
   top: 0;
@@ -7,24 +10,31 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: darkgreen;
-  width: 75px;
+  width: 100px;
   z-index: 101;
   color: black;
   font-weight: bold; }
   #font-size-changer .font-size-change-slider {
-    font-size: 15px;
+    font-size: 1em;
     text-align: center;
     cursor: pointer;
     background-color: forestgreen;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; }
   #font-size-changer .buttons {
-    display: flex;
+    text-align: center;
+    display: none;
     justify-content: space-around; }
   #font-size-changer .pointer:hover {
     cursor: pointer; }
 
 .text {
-  background-color: antiquewhite; }
+  background-color: antiquewhite;
+  position: relative;
+  right: -1500px; }
+
+h1 {
+  position: relative;
+  left: -500px; }
 
 /*# sourceMappingURL=style1.css.map */
