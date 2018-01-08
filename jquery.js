@@ -38,6 +38,15 @@ $test.on({
 });
 
 
-$button.append('<div>To jest drugi Div</div>').addClass('secondDiv');
+$('<div>To jest drugi Div</div>').addClass('secondDiv').prependTo('body');
+
+var $secondDiv = $('.secondDiv');
+
+$secondDiv.on('mouseenter', () => {
+    $(this).addClass('fontColor');
+});
+
+$('body').append('<div>To jest drugi div</div>');
+
 });
 
