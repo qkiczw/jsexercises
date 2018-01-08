@@ -1,28 +1,43 @@
 $(function () {
-   var $window = $(window);
-   var $page = $('html');
-   var $scrollBtn = $('#scroll-btn');
-   var $showScrollBntMinValue = 500;
 
-   function showScrollBtn() {
-       if ($(this).scrollTop() > $showScrollBntMinValue) {
-           console.log('show button');
-           $scrollBtn.show();
-       } else {
-           $scrollBtn.hide();
-       }
-
-   }
-
-   function scrollToTop() {
-       $page.animate({ scrollTop: 0 }, 600);
-   }
-
-    $window.on('scroll', showScrollBtn);
-    $scrollBtn.on('click', scrollToTop);
+var $test = $('.test');
+var $subtitle = $('.subtitle');
 
 
-    // font size changer
+$test.addClass('fontColor');
+$subtitle.text('To jest podtytuł!!!');
 
 
+var $button = $('.button');
+
+$button.on({
+    mouseenter: function() {
+        $(this).css('background-color', 'orange');
+        console.log( "hovered over a div" );
+    },
+    mouseleave: function() {
+        $(this).css('background-color', 'orangered');
+        console.log( "mouse left a div" );
+    },
+    click: function() {
+        console.log( "clicked on a div" );
+    }
 });
+
+
+$test.on({
+    mouseenter: function() {
+        console.log( "hovered over a div" );
+    },
+    mouseleave: function() {
+        console.log( "mouse left a div" );
+    },
+    click: function() {
+        console.log( "clicked on a div" );
+    }
+});
+
+
+$button.append('<div>To jest drugi Div</div>').addClass('secondDiv');
+});
+

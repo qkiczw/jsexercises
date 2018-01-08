@@ -83,3 +83,8 @@ console.log(colors);
 
 colors.pop();
 console.log(colors);
+
+
+var  mydate = moment('2016-01-01');
+
+console.log(mydate);
