@@ -88,4 +88,21 @@ const players = [
     {name: 'Justyna', score: 558},
 ];
 
+let nextPlayer = {name: 'Pioter', score: 666};
+
+players.push(nextPlayer);
+
 const bestScore =  players.sort((prev, next) => next.score - prev.score);
+console.log(`najwyżyszy winik to: ${bestScore[0].name} - ${players[0].score}`);
+
+const tableScore = () => {
+    for(let i = 0; i < bestScore.length; i++) {
+        console.log(`${i +1 } imię: ${bestScore[i].name} wynik: ${bestScore[i].score}`);
+    }
+};
+
+
+
+
+
+tableScore();
