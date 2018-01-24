@@ -101,8 +101,30 @@ const tableScore = () => {
     }
 };
 
-
-
-
-
 tableScore();
+
+
+const people = [
+    {name: 'Lukasz', lastName: 'Sztormowski', city: 'Czarna Woda', id: 'czw'},
+    {name: 'Tomek', lastName: 'Grefka', city: 'Czarna Woda', id: 'czw'},
+    {name: 'Damian', lastName: 'Szmytka', city: 'Gdynia', id: 'ga'},
+    {name: 'Piotr', lastName: 'Balecerzakk', city: 'Gdynia', id: 'ga'}
+];
+
+const cities = [
+    {name: 'Gdynia', id:'ga'},
+    {name: 'Czarna Woda', id: 'czw'}
+]
+
+let peopleInCzarnaWoda = [{}];
+
+peopleInCzarnaWoda = cities.map( (city) => {
+    return {
+        id: city.id,
+        miasto: city.name,
+        osoby: people.filter( (person) => {
+           return person.id.includes(city.id)
+        })
+    }
+});
+
